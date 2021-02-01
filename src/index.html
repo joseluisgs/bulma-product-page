@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="joseluisgs">
 
-    <title>Ninja Cofee</title>
-        
+    <title>Bulma Cofee</title>
+
     <!-- ESTILOS: Mis estilos, Bulma
     Si no lo minimizas debes cargar una línea por fichero css de assets -->
     <link rel="stylesheet" href="assets/css/estilos.css">
@@ -25,61 +25,44 @@
 
     <!-- MIS FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--     <link
+    <!--     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"> -->
 
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar is-fixed-top is-white has-shadow">
+        <!-- logo  -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="/assets/images/logo.png" width="112" height="50" class="py-1 px-1">
+            </a>
 
-    <!-- fuentes  y estilos de fuentes -->
-    <h1 class="is-size-1 has-text-centered">Hola, Bulma</h1>
-    <h2 class="is-size-2 has-text-right">Hola, Bulma</h2>
-    <h3>Hola, Bulma</h3>
-    <h4 class="is-size-7">Hola, Bulma</h4>
-
-    <p class="is-size-4 is-uppercase">Hola, otra vez</p>
-    <p class="is-size-5 is-italic">Hola, otra vez</p>
-    <p class="has-text-weight-bold">Hola, otra vez</p>
-    <p class="has-text-weight-light">Hola, otra vez</p>
-
-    <h2 class="title">Título</h2>
-    <h3 class="subtitle">Subtítulo</h3>
-
-    <!-- colores -->
-    <p class="has-text-primary has-background-dark">Texto en primary</p>
-    <p class="has-text-warning">Texto en warning</p>
-    <p class="has-text-danger">Texto en danger</p>
-    <p class="has-text-info">Texto en info</p>
-    <p class="has-text-success">Texto en success</p>
-    <p class="has-text-dark">Texto en dark</p>
-    <p class="has-text-light">Texto en light</p>
-
-    <!-- espaciado -->
-    <h1 class="py-6 my-6">Hola, Bulma</h1>
-    <h1 class="px-4 mx-6 py-4">Hola, Bulma</h1>
-    <h1 class="mt-4 mr-4 pb-6 pl-3">Hola, Bulma</h1>
-
-    <!-- contenedores -->
-    <section class="section">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non alias laboriosam a commodi nulla reprehenderit laborum, quam debitis. Rem, nulla minima. Repudiandae, fugiat? Omnis blanditiis consequatur eaque laudantium suscipit enim!</p>
-    </section>
-    <div class="section">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non alias laboriosam a commodi nulla reprehenderit
-                laborum, quam debitis. Rem, nulla minima. Repudiandae, fugiat? Omnis blanditiis consequatur eaque laudantium
-                suscipit enim!</p>
+            <!-- burguer -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu-items">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-    </div>
 
-    <div class="container is-fluid">
-        <div class="notification is-primary">
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae rem voluptatum iure voluptatem ipsam. Quisquam cumque esse fugit nemo veritatis porro eius eum temporibus dolor natus impedit, repudiandae consequuntur adipisci!
+        <!-- elementos del menú -->
+
+        <div id="navbar-menu-items" class="navbar-menu">
+            <!-- Los colocamos al final -->
+            <div class="navbar-end">
+                <a class="navbar-item"><i class="mdi mdi-account"></i>Mi cuenta</a>
+                <a class="navbar-item"><i class="mdi mdi-cart"></i>Cesta 
+                    <span class="tag is-info is-light">
+                    0
+                </span></a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-
+    <p>Hola Bulma</p>
 
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
