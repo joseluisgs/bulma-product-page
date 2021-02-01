@@ -6,7 +6,7 @@ Ejemplo de como crear una página de producto usando Bulma y personalizando con 
 [![Saas](https://img.shields.io/badge/Sass-%20Ready-ff69b4)](https://sass-lang.com/)
 [![Gulp](https://img.shields.io/badge/Gulp-%20Ready-cf4647)](https://gulpjs.com/)
 [![Licence](https://img.shields.io/github/license/joseluisgs/bulma-sass-init-gulp)](./LICENSE)
-![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bulma-sass-init-gulp)
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bulma-product-page)
 
 ## Acerca de
 
