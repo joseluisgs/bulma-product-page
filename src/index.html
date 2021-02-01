@@ -23,12 +23,12 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar is-fixed-top is-white has-shadow">
+    <nav class="navbar is-white has-shadow is-fixed-top">
 
         <!-- logo  -->
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <img src="/assets/images/logo.png" width="112" height="50" class="py-1 px-1">
+                <img src="assets/images/logo.png" style="max-height: 50px" class="py-2 px-2">
             </a>
 
             <!-- burguer -->
@@ -52,8 +52,40 @@
         </div>
     </nav>
 
-    <p>Hola Bulma</p>
+    <!-- contenedor principal: lleva padding porque la barra de navegación está fija-->
+    <section class="container pt-6">
+        <!-- migas de pan -->
+        <nav class="breadcrumb pt-5 mt-4 has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon is-small">
+                            <i class="mdi mdi-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Bulma</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon is-small">
+                            <i class="mdi mdi-cart" aria-hidden="true"></i>
+                        </span>
+                        <span>Documentation</span>
+                    </a>
+                </li>
+                <li class="is-active">
+                    <a href="#">
+                        <span class="icon is-small">
+                            <i class="mdi mdi-coffee" aria-hidden="true"></i>
+                        </span>
+                        <span>Breadcrumb</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
+    <p>Bulma</p>
+    </section>
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
     <script src="assets/scripts/scripts.js" charset="utf-8"></script>
