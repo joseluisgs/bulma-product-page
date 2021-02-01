@@ -15,7 +15,7 @@
 
     <!-- ICONOS MATERIAL -->
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-    
+
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
 
@@ -32,7 +32,8 @@
             </a>
 
             <!-- burguer -->
-            <a role="button" id ="navbar-menu-burguer" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu-items">
+            <a role="button" id="navbar-menu-burguer" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbar-menu-items">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -44,18 +45,18 @@
             <!-- Los colocamos al final -->
             <div class="navbar-end">
                 <a class="navbar-item"><i class="mdi mdi-account"></i>Mi cuenta</a>
-                <a class="navbar-item"><i class="mdi mdi-cart"></i>Cesta 
+                <a class="navbar-item"><i class="mdi mdi-cart"></i>Cesta
                     <span class="tag is-info is-light">
-                    0
-                </span></a>
+                        0
+                    </span></a>
             </div>
         </div>
     </nav>
 
     <!-- contenedor principal: lleva padding porque la barra de navegación está fija-->
-    <section class="container mt-6 px-3">
+    <section class="container mt-6 pt-1 px-3">
         <!-- migas de pan -->
-        <nav class="breadcrumb mt-6 pt-6 has-arrow-separator" aria-label="breadcrumbs">
+        <nav class="breadcrumb mt-6 has-arrow-separator" aria-label="breadcrumbs">
             <ul>
                 <li>
                     <a href="#">
@@ -84,7 +85,24 @@
             </ul>
         </nav>
 
-    <p>Bulma</p>
+        <!-- producto -->
+        <section>
+            <div class="columns is-vcentered">
+                <div class="column is-3">
+                    <h1 class="is-size-1 title">Docker</h1>
+                    <h2 class="is-size-2 subtitle">Aroma tostado</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatum odio vero ducimus quia velit perspiciatis, et ut reiciendis architecto.</p>
+                </div>
+                <div class="column is-5 has-text-centered">
+                    <img src="assets/images/product.png" alt="producto café" class="px-6">
+                </div>
+                <div class="column is-4">
+                    <div class="is-size-4 mb-4">10.95€</div>
+                    <p class="mb-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quis?</p>
+                </div>
+            </div>
+        </section>
+        <p>Bulma</p>
     </section>
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
