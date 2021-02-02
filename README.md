@@ -12,6 +12,11 @@ Ejemplo de como crear una página de producto usando Bulma y personalizando con 
 
 Pagina web de un producto realizada con [Bulma](https://bulma.io/) y cambiar su apariencia con Sass. La intercatividad está realizada con Vanila JS. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido como iconos [Font Awesome](https://fontawesome.com/)/[Material Desing Icons](https://materialdesignicons.com/) cambíandolos desde el fichero HTML, o simplemente pudiendo elegir ambos si se quiere.
 
+### Capturas
+<img src="./images/desktop.jpg" height="600"/>
+<img src="./images/tablet.jpg" height="600"/>
+<img src="./images/mobile.jpg" height="600"/>
+
 ## Funcionamiento con npm:
 
 #### Setup y configuración de librerías
@@ -42,3 +47,6 @@ Codificado con :sparkling_heart: por [José Luis González Sánchez](https://twi
 ## Licencia
 
 Este proyecto esta licenciado bajo licencia **MIT**, si desea saber más, visite el fichero [LICENSE](./LICENSE) para su uso docente y educativo.
+
+### Agradecimientos
+Proyecto basado en los tutoriales de [Net Ninja](https://www.thenetninja.co.uk/)
