@@ -101,19 +101,29 @@
                     <div class="is-size-4 mb-4 has-text-info-dark">10.95€</div>
                     <p class="mb-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quis?</p>
 
-                    <!-- Boton -->
-                    <button class="button is-primary is-outlined">
-                        <span class="icon">
-                            <i class="mdi mdi-cart"></i>
-                        </span>
-                        <span>Añadir</span>
-                    </button>
+                    <form >
+                        <div class="control mb-4">
+                        <div class="select is-dark">
+                            <select>
+                                <option>Pequeño (250g)</option>
+                                <option>Grande (500g)</option>
+                            </select>
+                        </div>
+                        </div>
+                        <!-- Boton -->
+                        <button class="button is-primary is-outlined">
+                            <span class="icon">
+                                <i class="mdi mdi-cart"></i>
+                            </span>
+                            <span>Añadir</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="columns is-8 is-variable">
+            <div class="columns is-8 is-variable mt-4">
                 <div class="column is-7-tablet">
                     <!--  Pestañas -->
                     <div class="tabs is-boxed">
@@ -163,7 +173,7 @@
                                 reiciendis, nulla qui beatae maiores fugit ea dolore magni recusandae quo veritatis
                                 aliquam perspiciatis, sit eligendi at dignissimos magnam?</p>
                             <div class="has-text-centered">
-                                <button class="button is-warning mt-4">
+                                <button id="signup" class="button is-warning mt-4">
                                     <span class="icon">
                                         <i class="mdi mdi-seal"></i>
                                     </span>
@@ -227,6 +237,46 @@
             </div>
         </section>
     </section>
+
+    <!-- modals -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <h3 class="title mb-6">Únete al Club</h3>
+            <!-- formulario -->
+            <form>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Nombre" required>
+                        <span class="icon is-small is-left">
+                            <i class="mdi  mdi-card-account-details"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="email" placeholder="Email" required>
+                        <span class="icon is-small is-left">
+                            <i class="mdi mdi-at"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            Estoy de acuerdo con <a href="#">términos y condiciones del club</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-6 has-text-centered">
+                    <button class="button is-warning">Inscribirse</button>
+                </div>
+            </form>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
     <script src="assets/scripts/scripts.js" charset="utf-8"></script>

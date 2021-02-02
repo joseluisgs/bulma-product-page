@@ -51,3 +51,25 @@ tabs.forEach((tab) => {
         });
     });
 });
+
+// MODAL
+// recogemos las cosas que necesitamos
+const signupButton = document.querySelector('#signup');
+const modalBg = document.querySelector('.modal-background');
+const modal = document.querySelector('.modal');
+const modalCloseButton = document.querySelector('.modal-close');
+
+// Si pulsamos el botón, cambiamos modal a actiivo
+signupButton.addEventListener('click', () => {
+    modal.classList.add('is-active');
+});
+
+// Si pulsamos fuera o el botón de cerrar del modal, ocultamos el fondo
+modalBg.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+});
+modalCloseButton.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+});
+
+
