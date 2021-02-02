@@ -7,108 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="joseluisgs">
 
-    <title>Bulma Init Plantilla</title>
-        
+    <title>Bulma Cofee</title>
+
     <!-- ESTILOS: Mis estilos, Bulma
     Si no lo minimizas debes cargar una línea por fichero css de assets -->
     <link rel="stylesheet" href="assets/css/estilos.css">
 
-    <!-- ICONOS -->
-    <!-- MATERIAL -->
+    <!-- ICONOS MATERIAL -->
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-    <!-- FA  -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> -->
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-
-    <!-- MIS FUENTES -->
+    
+    <!-- FUENTES-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap"
         rel="stylesheet">
-
+        
 </head>
 
 <body>
-<!-- HERO CON NAVBAR -->
-<section class="hero is-primary is-fullheight block">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-        <header class="navbar ">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item">
-                        <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-                    </a>
-                    <!-- HAMBUGUSA PARA MINIMIZAR -->
-                    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item is-active">
-                            Inicio
-                        </a>
-                        <a class="navbar-item" href="#Contenido">
-                            Contenido
-                        </a>
-                        <a class="navbar-item" href="#Footer">
-                            Footer
-                        </a>
-                        <span class="navbar-item">
-                            <a class="button is-github is-inverted is-outlined" href="https://github.com/joseluisgs" target="_blank">
-                                <span class="icon">
-                                    <i class="mdi mdi-github"></i>
-                                </span>
-                                <span>Descargar</span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar is-white has-shadow is-fixed-top">
 
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <p class="title is-1">
-                Hola Bulma 👋 
-            </p>
-            <p class="subtitle">
-                Plantilla de ejemplo realizada en Bulma y personalizada usando Sass
-            </p>
-            <a href="https://bulma.io">
-                <img src="https://bulma.io/images/made-with-bulma--semiwhite.png" alt="Made with Bulma" width="256" height="48">
+        <!-- logo  -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/images/logo.png" style="max-height: 50px" class="py-2 px-2">
+            </a>
+
+            <!-- burguer -->
+            <a role="button" id="navbar-menu-burguer" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbar-menu-items">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
-    </div>
 
-    <!-- Hero footer: will stick at the bottom -->
-    <!-- <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
-                <ul>
-                    <li class="is-active"><a>Overview</a></li>
-                    <li><a>Modifiers</a></li>
-                    <li><a>Grid</a></li>
-                    <li><a>Elements</a></li>
-                </ul>
+        <!-- elementos del menú -->
+        <div id="navbar-menu-items" class="navbar-menu">
+            <!-- Los colocamos al final -->
+            <div class="navbar-end">
+                <a class="navbar-item"><i class="mdi mdi-account"></i>Mi cuenta</a>
+                <a class="navbar-item"><i class="mdi mdi-cart"></i>Cesta
+                    <span class="tag is-info is-light">
+                        0
+                    </span></a>
             </div>
-        </nav>
-    </div> -->
-</section>
+        </div>
+    </nav>
 
-
-    <!-- OTRA SECCION -->
-    <div id="Contenido" class="container block">
-        <!-- BREADCUMS -->
-        <nav class="breadcrumb" aria-label="breadcrumbs">
+    <!-- CONTENIDO -->
+    <!-- contenedor principal: lleva padding porque la barra de navegación está fija-->
+    <section class="container mt-6 pt-1 px-3">
+        <!-- migas de pan -->
+        <nav class="breadcrumb mt-6 has-arrow-separator" aria-label="breadcrumbs">
             <ul>
                 <li>
                     <a href="#">
@@ -121,23 +75,15 @@
                 <li>
                     <a href="#">
                         <span class="icon is-small">
-                            <i class="mdi mdi-book-multiple" aria-hidden="true"></i>
+                            <i class="mdi mdi-cart" aria-hidden="true"></i>
                         </span>
                         <span>Documentation</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon is-small">
-                            <i class="mdi mdi-puzzle" aria-hidden="true"></i>
-                        </span>
-                        <span>Components</span>
                     </a>
                 </li>
                 <li class="is-active">
                     <a href="#">
                         <span class="icon is-small">
-                            <i class="mdi mdi-thumb-up" aria-hidden="true"></i>
+                            <i class="mdi mdi-coffee" aria-hidden="true"></i>
                         </span>
                         <span>Breadcrumb</span>
                     </a>
@@ -145,81 +91,217 @@
             </ul>
         </nav>
 
+        <!-- producto -->
+        <section>
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title has-text-primary">Docker</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Aroma tostado</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatum odio vero ducimus
+                        quia velit perspiciatis, et ut reiciendis architecto.</p>
+                </div>
+                <div class="column is-6-tablet is-5-desktop has-text-centered">
+                    <img src="assets/images/product.png" alt="producto café" class="px-6">
+                </div>
+                <div id="precio" class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4 has-text-primary">10,95€</div>
+                    <p class="mb-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quis?</p>
 
-        <div class="notification">
-            <h1 class="title is-1">
-                Bulma
-            </h1>
-
-            <p class="subtitle is-4">
-                CSS Basado en <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-            </p>
-
-            <div class="field">
-                <p class="control has-icons-left">
-                    <input class="input" type="email" placeholder="Email">
-                    <span class="icon is-medium is-left">
-                        <i class="mdi mdi-email-outline"></i>
-                    </span>
-                </p>
+                    <form >
+                        <div class="control mb-4">
+                        <div class="select is-dark">
+                            <select>
+                                <option>Pequeño (250g)</option>
+                                <option>Grande (500g)</option>
+                            </select>
+                        </div>
+                        </div>
+                        <!-- Boton -->
+                        <button class="button is-primary">
+                            <span class="icon">
+                                <i class="mdi mdi-cart"></i>
+                            </span>
+                            <span>Añadir</span>
+                        </button>
+                    </form>
+                </div>
             </div>
+        </section>
 
-            <div class="field">
-                <p class="control">
-                    <span class="select">
-                        <select>
-                            <option>Selecciona opción</option>
-                        </select>
-                    </span>
-                </p>
-            </div>
+        <section>
+            <div class="columns is-8 is-variable mt-4">
+                <div class="column is-7-tablet">
+                    <!--  Pestañas -->
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>
+                                    <span class="icon is-small">
+                                        <i class="mdi  mdi-book-information-variant" aria-hidden="true"></i>
+                                    </span>
+                                    Detalles
+                                </a>
+                            </li>
+                            <li data-target="product-delivery">
+                                <a>
+                                    <span class="icon is-small">
+                                        <i class="mdi  mdi-package" aria-hidden="true"></i>
+                                    </span>
+                                    Envíos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contenido de las pestañas -->
+                    <div id="tab-content" class="px-2">
+                        <div id="product-details">
+                            <h3 class="is-size5 title">Detalles</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus quos ea iusto
+                                necessitatibus dignissimos repellat rerum distinctio eius obcaecati!</p>
+                        </div>
+                        <div id="product-delivery" class="is-hidden">
+                            <h3 class="is-size5 title">Envíos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit laudantium cum
+                                tempora quisquam quidem, culpa mollitia a modi necessitatibus?</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="buttons">
-                <a class="button is-primary">Primary</a>
-                <a class="button is-link">Link</a>
-                <button class="button is-twitter">
-                    <span class="icon">
-                        <i class="mdi mdi-twitter"></i>
-                    </span>
-                    <span>@joseluisgonsan</span>
-                </button>
-                <button class="button is-github">
-                    <span class="icon">
-                        <i class="mdi mdi-github"></i>
-                    </span>
-                    <span>joseluisgs</span>
-                </button>
+
+                <div class="column is-5-tablet">
+                    <!-- Mensaje -->
+                    <div class="message">
+                        <div class="message-header has-background-primary">
+                            <p>Gana puntos con el Club de Socios</p>
+                        </div>
+                        <div class="message-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, reprehenderit. Alias
+                                reiciendis, nulla qui beatae maiores fugit ea dolore magni recusandae quo veritatis
+                                aliquam perspiciatis, sit eligendi at dignissimos magnam?</p>
+                            <div class="has-text-centered">
+                                <button id="signup" class="button is-warning mt-4">
+                                    <span class="icon">
+                                        <i class="mdi mdi-seal"></i>
+                                    </span>
+                                    <span>Inscribirse</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="has-text-centered">
-                <a href="https://bulma.io">
-                    <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="175" height="32">
-                </a>
+        </section>
+
+        <!-- cards: las pongo más adentro con un container y lo ocultamos en moviles -->
+        <section class="section is-hidden-mobile">
+            <div class="container">
+                <h3 class="title has-text-centered is-size-4 has-text-primary">Productos relacionados</h3>
+                <div class="columns mt-5 is-8 is-variable is-centered">
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card">
+                            <div class="car-image has-text-centered px-6">
+                                <img src="assets/images/p1.png">
+                            </div>
+                            <div class="card-content">
+                                <p>12,95€</p>
+                                <p class="title is-size-5 has-text-primary">Cortado Aroma</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item"><a class="has-text-grey" href="">Ver</a></p>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card">
+                            <div class="car-image has-text-centered px-6">
+                                <img src="assets/images/p2.png">
+                            </div>
+                            <div class="card-content">
+                                <p>12,95€</p>
+                                <p class="title is-size-5 has-text-primary">Brasil Ecológico</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item"><a class="has-text-grey" href="">Ver</a></p>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card">
+                            <div class="car-image has-text-centered px-6">
+                                <img src="assets/images/p3.png">
+                            </div>
+                            <div class="card-content">
+                                <p>12,95€</p>
+                                <p class="title is-size-5 has-text-primary">Café Colombia</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item"><a class="has-text-grey" href="">Ver</a></p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+        </section>
+    </section>
+
+    <!-- modals -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <h3 class="title mb-6">Únete al Club</h3>
+            <!-- formulario -->
+            <form>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Nombre" required>
+                        <span class="icon is-small is-left">
+                            <i class="mdi  mdi-card-account-details"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="email" placeholder="Email" required>
+                        <span class="icon is-small is-left">
+                            <i class="mdi mdi-at"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            Estoy de acuerdo con <a href="#">términos y condiciones del club</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-6 has-text-centered">
+                    <button class="button is-warning">Inscribirse</button>
+                </div>
+            </form>
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
     <!-- FOOTER -->
     <footer id="Footer" class="footer">
         <div class="content has-text-centered">
-                <p class="copyright">Coding with <i class="mdi mdi-heart-multiple" size="is-small"></i> &copy;
-                    <a href="http://github.com/joseluisgs" target="_blank" rel="noopener noreferrer">José Luis González Sánchez</a>. 2021
-                </p>
-                    <a href="https://twitter.com/joseluisgonsan" target="_blank">
-                        <i class="mdi mdi-24px mdi-twitter has-text-twitter"></i>
-                    </a>
-                    <a href="https://github.com/joseluisgs" target="_blank">
-                        <i class="mdi mdi-24px mdi-github has-text-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/joseluisgonsan/?locale=es_ES" target="_blank">
-                        <i class="mdi mdi-24px mdi-linkedin has-text-linkedin"></i>
-                    </a>
+            <p class="copyright">Coding with <i class="mdi mdi-heart-multiple" size="is-small"></i> &copy;
+                <a href="http://github.com/joseluisgs" target="_blank" rel="noopener noreferrer">José Luis González
+                    Sánchez</a>. 2021
+            </p>
+            <a href="https://twitter.com/joseluisgonsan" target="_blank">
+                <i class="mdi mdi-24px mdi-twitter has-text-twitter"></i>
+            </a>
+            <a href="https://github.com/joseluisgs" target="_blank">
+                <i class="mdi mdi-24px mdi-github has-text-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joseluisgonsan/?locale=es_ES" target="_blank">
+                <i class="mdi mdi-24px mdi-linkedin has-text-linkedin"></i>
+            </a>
         </div>
-        
+    
     </footer>
-
-
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
     <script src="assets/scripts/scripts.js" charset="utf-8"></script>

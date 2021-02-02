@@ -5,23 +5,26 @@
 @import 'node_modules/bulma/sass/utilities/initial-variables';
 @import 'node_modules/bulma/sass/utilities/functions';
 
+// Si quiero alinear algo abajo de todo de una columna
+// #precio { margin-top: auto; }
+
 // PERSONALIZACION DE BULMA
 // Cambiamos nuestro estilo por defecto
 // Comentar y descomentar para ver los cambios
 
 // Cambiamos los colores
-$purple: #8a4d76;
-$pink: #fa7c91;
+$coffee: #362D26;
+$coffe-light: #6f4e37;
 $brown: #757763;
 $beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
+$beige-lighter: #fcfcfc;
 
 // Actualizamos las variables de Bulma
-$family-sans-serif: 'Nunito', sans-serif;
+$family-sans-serif: 'Montserrat', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
+$primary: $coffee;
+$link: $coffe-light;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
