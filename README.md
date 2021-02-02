@@ -1,6 +1,6 @@
 # Bulma - Product Page
 
-Ejemplo de como crear una página de producto usando Bulma y personalizando con Sass. Automatizado con Gulp.
+Ejemplo de como crear una página de producto usando Bulma y personalizando con Sass y Vanilla JS. Automatizado con Gulp.
 
 [![Bulma](https://img.shields.io/badge/Bulma-%20Ready-00d1b2)](https://bulma.io/made-with-bulma/)
 [![Saas](https://img.shields.io/badge/Sass-%20Ready-ff69b4)](https://sass-lang.com/)
@@ -10,7 +10,7 @@ Ejemplo de como crear una página de producto usando Bulma y personalizando con 
 
 ## Acerca de
 
-Pagina web de un producto realizada con [Bulma](https://bulma.io/) y cambiar su apariencia con Sass. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido como iconos [Font Awesome](https://fontawesome.com/)/[Material Desing Icons](https://materialdesignicons.com/) cambíandolos desde el fichero HTML, o simplemente pudiendo elegir ambos si se quiere.
+Pagina web de un producto realizada con [Bulma](https://bulma.io/) y cambiar su apariencia con Sass. La intercatividad está realizada con Vanila JS. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido como iconos [Font Awesome](https://fontawesome.com/)/[Material Desing Icons](https://materialdesignicons.com/) cambíandolos desde el fichero HTML, o simplemente pudiendo elegir ambos si se quiere.
 
 ## Funcionamiento con npm:
 
